@@ -1,22 +1,19 @@
 package esgp;
 
 /**
- * UserType defines integer constants representing the three possible
- * user types in the ESGP system.
+ * UserType defines integer constants representing the two possible
+ * user types in the ESGP system, as specified in the SDS (Section 3.4).
  *
  * <ul>
- *   <li>{@code encostUnverified} – An Encost account holder whose credentials
- *       have NOT been verified against the users file. Gets graph visualisation only.</li>
- *   <li>{@code encostVerified} – An Encost account holder whose credentials
- *       HAVE been verified. Gets all three features.</li>
- *   <li>{@code community} – A guest/community user (no login). Gets graph
- *       visualisation only.</li>
+ *   <li>{@code COMMUNITY} – A guest/community user. No login required.
+ *       Has access to graph visualisation only.</li>
+ *   <li>{@code ENCOST} – A verified Encost user. Must authenticate via
+ *       {@link LoginManager}. Has access to all three features.</li>
  * </ul>
  */
 public class UserType {
-    public static final int encostUnverified = 0;
-    public static final int encostVerified   = 1;
-    public static final int community        = 2;
+    public static final int COMMUNITY = 0;
+    public static final int ENCOST    = 1;
 
     // Prevent instantiation
     private UserType() {}
