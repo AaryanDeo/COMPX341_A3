@@ -1,0 +1,3 @@
+Device ID,Date Connected,Device name,Device type,Household ID,Router Connection,Sends,Receives
+EWR-1234,01/04/22,CORRUPTED ROW MISSING COLUMNS
+ELB-4567,01/04/22,Encost Smart Bulb,Light Bulb,WKO-1234,EWR-1234,No,Yes

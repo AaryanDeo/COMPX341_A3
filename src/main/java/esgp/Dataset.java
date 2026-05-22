@@ -19,7 +19,7 @@ import java.util.Map;
  */
 public class Dataset {
 
-    private String filepath = "Encost_Smart_Homes_Dataset__bigger_.txt";
+    private String filepath = "Encost Smart Homes Dataset (bigger).txt";
     private String dataLine;
     private BufferedReader reader;
     private ArrayList<Device> devices = new ArrayList<>();

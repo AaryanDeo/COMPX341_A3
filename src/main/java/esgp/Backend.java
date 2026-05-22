@@ -214,6 +214,7 @@ public class Backend {
      * As per the SDS (section 2.1.8 and wireframe 4.7.5).
      */
     public void displayGraph() {
+	System.setProperty("org.graphstream.ui", "swing");
         System.out.println("Loading graph visualisation...");
         graphData.setDevices(dataset.getDevices());
         graphData.displayGraph();
